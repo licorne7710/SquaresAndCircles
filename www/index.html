@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Squares and Circles</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+
+         html,body {margin:0;padding:0;font-size:20px;}
+    .container {width:49.9%;height:30rem;background:linear-gradient(to bottom right,yellow,green);float:left;position:relative;}
+    .template {width:2rem; height:2rem;padding:1rem;outline:0.4rem solid black;border:0.5rem solid white;margin-left:0.4rem;margin-top:0.4rem;}
+     .round {border-radius:2rem;}
+    .red { background-color:red;  }
+    .blue { background-color:blue; margin:auto;margin-top:7rem;border:0.5rem dotted white;outline-style:dashed;}
+    .orange { background-color:orange; border-style: dashed ;outline-style:dotted;black;position:absolute;bottom:15px;right:15px;}
+
+    </style>
+
+    <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
+    <!-- <script src="cordova.js"></script> -->          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <!-- <script src="js/app.js"></script> -->           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <!-- <script src="xdk/init-dev.js"></script> -->     <!-- normalizes device and document ready events, see README for details -->
+</head>
+
+<body>
+
+
+    <div class="container">
+      <div class="template red">&nbsp; </div>
+      <div class="template blue">&nbsp; </div>
+      <div class="template orange">&nbsp;</div>
+
+  </div>
+  <div class="container">
+      <div class="template round red" >&nbsp; </div>
+      <div class="template round blue" >&nbsp; </div>
+      <div class="template round orange" >&nbsp;</div>
+
+  </div>
+
+</body>
+</html>
